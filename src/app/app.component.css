@@ -1,0 +1,66 @@
+ /* complete page style */
+ .page-background{
+    background-color: Teal;
+  }
+
+
+
+  /*Hospital Navbar styles*/
+  .brand{
+    color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bolder;
+    font-style: oblique;
+    background-color:rgb(91, 122, 122);
+    border-radius: 100vw;
+    border-color: blanchedalmond;
+    font-size: x-large;
+    width: auto;
+    padding: 10px;
+    box-shadow: 1px 0px 10px rgb(219, 189, 207);
+  }
+  .hospital-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 5vw;
+    padding: 2px 2px 2px 30px;
+    text-shadow:2px 2px 2px rgb(161, 156, 156);
+    color: white;
+    margin-left: 22vw
+  }
+
+  /*Components navbar*/
+  .navbar-component{
+   color: white;
+  }
+  .nav-link-component{
+    border-radius: 50px;
+    margin: 5px;
+    color: white;
+    font-size: 18px;
+    
+    padding:0px;
+  }
+  .nav-item:hover{
+      background-color: rgb(24, 0, 41);
+      box-shadow: 1px 1px 5px black;
+      color: black;
+  }
+  .active{
+      color:white;
+      font-size: 23px;
+     }
+  .home{
+      text-decoration: none;
+      color: rgba(255,255,255,.5);
+  }
+  .login,.signup{
+      color: white;
+      margin-left: 5px;
+      padding: 5px 10px 8px 10px;
+      border-radius: 30px;
+      border: 2px solid salmon;
+  }
+  .login:hover,.signup:hover{
+    background-color: salmon;
+  }

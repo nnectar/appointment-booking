@@ -1,0 +1,50 @@
+
+  <div class="fluid-container page-background">
+
+    <!--Hospitalname navbar-->
+    <nav class="text-center navbar navbar-expand navbar-dark">
+      <!-- <div class="navbar-brand brand">SAMHAD</div> -->
+      <div class="hospital-name">
+        SAMHAD Hospitals
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-component navbar-expand-lg navbar-dark">
+      <!-- <a class="home" routerLinkActive="active" routerLink="/home">Home</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/slotspage" routerLinkActive="active">Doctors</a>
+          </li>
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/specialists" routerLinkActive="active">Specialists</a>
+          </li>
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/location" routerLinkActive="active">Location</a>
+          </li>
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/camps" routerLinkActive="active">Camps</a>
+          </li>
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/achievements" routerLinkActive="active">Acheivements</a>
+          </li>
+          <li class="nav-item nav-link-component">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sign text-center">
+          <a class="nav-link login float-right" routerLink="/achievements">login</a>
+          <a class="nav-link signup float-right" routerLink="/contact">SignUp</a>
+      </div>
+    </nav>
+  </div>
+<router-outlet></router-outlet>
