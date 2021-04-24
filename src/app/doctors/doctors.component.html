@@ -1,1 +1,30 @@
-<p>doctors works!</p>
+
+ <div class="body">
+ <div class="row row-cols-sm-1 row-cols-md-2 g-4 m-3">
+    <div *ngFor="let n of doctors" class="col">
+    <div class="container bcontent">
+        <div class="card" >
+            <div class="row no-gutters">
+                <div class="col-sm-5">
+                       <img class="card-img  rounded-circle m-4" [src]=n.img >
+                </div>
+                <div class="col-sm-7">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>{{n.name}}</b></h5>
+                        <hr>
+                        <div class="card-text">
+                            <p><b> Qualification :</b> {{n.study}}</p>
+                           <p><b>Speciality :</b> {{n.speciality}}</p>
+                            <p><b>Consultant In : </b>{{n.hospital}}</p>
+                            <p><b>Experience : </b>{{n.experience}} Years</p>
+                            <p><b>Language</b> {{n.language}}</p>
+                        </div>
+                        <a href="#" class="btn mt-3">Book appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
