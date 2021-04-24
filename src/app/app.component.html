@@ -42,9 +42,94 @@
       </div>
 
       <div class="sign text-center">
-          <a class="nav-link login float-right" routerLink="/achievements">login</a>
-          <a class="nav-link signup float-right" routerLink="/contact">SignUp</a>
-      </div>
+          <a class="nav-link login float-right" data-bs-target="#loginModal" data-bs-toggle="modal">login</a>
+          <a class="nav-link signup float-right" data-bs-toggle="modal" data-bs-target="#signUpModal">SignUp</a>
+     </div>
     </nav>
+  
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: rgb(193, 248, 193);">
+      <div class="modal-header">
+        <h3 class="modal-title mx-auto" id="exampleModalLabel">Login Page</h3>
+        <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close">x</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="col-form-label">Username:</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label">Password:</label>
+            <input class="form-control" id="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary mx-auto">Login</button>
+      </div>
+    </div>
   </div>
+</div>
+
+
+<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: rgb(193, 248, 193);">
+      <div class="modal-header">
+        <h3 class="modal-title mx-auto" id="exampleModalLabel">SignUp Page</h3>
+        <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close">x</button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="text" class="form-control" id="phone">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="col-form-label">Password:</label>
+            <input class="form-control" id="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary mx-auto">signUp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
 <router-outlet></router-outlet>
